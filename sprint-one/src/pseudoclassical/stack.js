@@ -8,6 +8,7 @@ var Stack = function() {
 Stack.prototype.push = function(value){
 	this.storage[this.count] = value;
 	this.count++;
+	console.log(this.storage);
 };
 
 Stack.prototype.pop = function() {
@@ -24,3 +25,7 @@ Stack.prototype.size = function() {
 	return this.count;
 };
 
+//create instance using new keyword
+
+// var a = new Stack();
+// a.push('a');
